@@ -1,0 +1,217 @@
+.wrap {
+    position: absolute;
+    height: 6rem;
+    margin: auto;
+    width: 12rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .gooey {
+    cursor: pointer;
+    display: inline-block;
+    height: 6rem;
+    width: 6rem;
+    background: #CCC;
+    border-radius: 50%;
+    box-shadow: 3rem 0 0 #CCC;
+  }
+  .gooey:after {
+    content: '';
+    position: absolute;
+    left: 3rem;
+    bottom: 5.175rem;
+    display: inline-block;
+    height: 6rem;
+    width: 6rem;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 10.35rem 0 #fff;
+  }
+  .gooey:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 6rem;
+    display: inline-block;
+    height: 6rem;
+    width: 6rem;
+    background: #CCC;
+    border-radius: 50%;
+  }
+  .gooey input {
+    display: none;
+  }
+  .gooey span {
+    position: relative;
+    margin: 0.5rem;
+    display: inline-block;
+    height: 5rem;
+    width: 5rem;
+    background: #EAEAEA;
+    border-radius: 50%;
+    -moz-animation: gooey-unchecked 0.5s ease-in-out;
+    -webkit-animation: gooey-unchecked 0.5s ease-in-out;
+    animation: gooey-unchecked 0.5s ease-in-out;
+  }
+  .gooey input.active + span {
+    left: 100%;
+    background: #F95E2F;
+    -moz-animation: gooey-checked 0.5s ease-in-out;
+    -webkit-animation: gooey-checked 0.5s ease-in-out;
+    animation: gooey-checked 0.5s ease-in-out;
+  }
+  
+  @-moz-keyframes gooey-unchecked {
+    0% {
+      left: 100%;
+      background: #F95E2F;
+    }
+    25% {
+      border-radius: 60%   40%   40%  60% / 50%;
+      -moz-transform: scaleY(0.8);
+      transform: scaleY(0.8);
+    }
+    50% {
+      -moz-transform: scaleY(0.7);
+      transform: scaleY(0.7);
+    }
+    75% {
+      border-radius: 40%   60%   60%  40% / 50%;
+      -moz-transform: scaleY(0.8);
+      transform: scaleY(0.8);
+    }
+    100% {
+      left: 0;
+      background: #EAEAEA;
+    }
+  }
+  @-webkit-keyframes gooey-unchecked {
+    0% {
+      left: 100%;
+      background: #F95E2F;
+    }
+    25% {
+      border-radius: 60%   40%   40%  60% / 50%;
+      -webkit-transform: scaleY(0.8);
+      transform: scaleY(0.8);
+    }
+    50% {
+      -webkit-transform: scaleY(0.7);
+      transform: scaleY(0.7);
+    }
+    75% {
+      border-radius: 40%   60%   60%  40% / 50%;
+      -webkit-transform: scaleY(0.8);
+      transform: scaleY(0.8);
+    }
+    100% {
+      left: 0;
+      background: #EAEAEA;
+    }
+  }
+  @keyframes gooey-unchecked {
+    0% {
+      left: 100%;
+      background: #F95E2F;
+    }
+    25% {
+      border-radius: 60%   40%   40%  60% / 50%;
+      -moz-transform: scaleY(0.8);
+      -webkit-transform: scaleY(0.8);
+      transform: scaleY(0.8);
+    }
+    50% {
+      -moz-transform: scaleY(0.7);
+      -webkit-transform: scaleY(0.7);
+      transform: scaleY(0.7);
+    }
+    75% {
+      border-radius: 40%   60%   60%  40% / 50%;
+      -moz-transform: scaleY(0.8);
+      -webkit-transform: scaleY(0.8);
+      transform: scaleY(0.8);
+    }
+    100% {
+      left: 0;
+      background: #EAEAEA;
+    }
+  }
+  @-moz-keyframes gooey-checked {
+    0% {
+      left: 0;
+      background: #EAEAEA;
+    }
+    25% {
+      border-radius: 40%   60%   60%  40% / 50%;
+      -moz-transform: scaleY(0.8);
+      transform: scaleY(0.8);
+    }
+    50% {
+      -moz-transform: scaleY(0.7);
+      transform: scaleY(0.7);
+    }
+    75% {
+      border-radius: 60%   40%   40%  60% / 50%;
+      -moz-transform: scaleY(0.8);
+      transform: scaleY(0.8);
+    }
+    100% {
+      left: 100%;
+      background: #F95E2F;
+    }
+  }
+  @-webkit-keyframes gooey-checked {
+    0% {
+      left: 0;
+      background: #EAEAEA;
+    }
+    25% {
+      border-radius: 40%   60%   60%  40% / 50%;
+      -webkit-transform: scaleY(0.8);
+      transform: scaleY(0.8);
+    }
+    50% {
+      -webkit-transform: scaleY(0.7);
+      transform: scaleY(0.7);
+    }
+    75% {
+      border-radius: 60%   40%   40%  60% / 50%;
+      -webkit-transform: scaleY(0.8);
+      transform: scaleY(0.8);
+    }
+    100% {
+      left: 100%;
+      background: #F95E2F;
+    }
+  }
+  @keyframes gooey-checked {
+    0% {
+      left: 0;
+      background: #EAEAEA;
+    }
+    25% {
+      border-radius: 40%   60%   60%  40% / 50%;
+      -moz-transform: scaleY(0.8);
+      -webkit-transform: scaleY(0.8);
+      transform: scaleY(0.8);
+    }
+    50% {
+      -moz-transform: scaleY(0.7);
+      -webkit-transform: scaleY(0.7);
+      transform: scaleY(0.7);
+    }
+    75% {
+      border-radius: 60%   40%   40%  60% / 50%;
+      -moz-transform: scaleY(0.8);
+      -webkit-transform: scaleY(0.8);
+      transform: scaleY(0.8);
+    }
+    100% {
+      left: 100%;
+      background: #F95E2F;
+    }
+  }
+  
